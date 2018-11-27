@@ -14,14 +14,14 @@ namespace uwds_qsr_clients
                          const Invalidations& invalidations)
   {
     // Here goes the code that is executed on every changes
-    for (const auto& subject_id : invalidations.nodes_id_updated)
+    for (const auto& subject_id : invalidations.node_ids_updated)
     {
-      subject = worlds()[world].scene().nodes()[subject_id];
+      Node subject = worlds()[world].scene().nodes()[subject_id];
       if(subject.type == MESH)
       {
-        // Iterate over the content of the map so object and subject are the same type ;)
-        for (const auto& object : worlds()[world].scene().nodes())
+        for (const auto& object_ptr : worlds()[world].scene().nodes())
         {
+          Node object = *object_ptr;
           if(object.type == MESH)
           {
             // Evaluate subject and object relations
