@@ -1,0 +1,7 @@
+<library path="lib/libuwds_qsr_clients">
+  <class name="uwds_qsr_clients/MonitorExample"
+         type="uwds_qsr_clients::MonitorExample"
+         base_class_type="nodelet::Nodelet">
+    <description>This client monitor the relations</description>
+  </class>-->
+</library>
