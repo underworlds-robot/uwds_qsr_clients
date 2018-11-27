@@ -1,5 +1,5 @@
-#ifndef WORLD_MERGER_HPP
-#define WORLD_MERGER_HPP
+#ifndef MONITOR_EXAMPLE_HPP
+#define MONITOR_EXAMPLE_HPP
 
 #include <uwds/uwds.h>
 #include <uwds/reconfigurable_client.h>
