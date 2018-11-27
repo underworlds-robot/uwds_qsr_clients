@@ -17,12 +17,18 @@ namespace uwds_qsr_clients
     for (const auto& subject_id : invalidations.nodes_id_updated)
     {
       subject = worlds()[world].scene().nodes()[subject_id];
-      // Iterate over the content of the map so object and subject are the same type ;)
-      for (const auto& object : worlds()[world].scene().nodes())
+      if(subject.type == MESH)
       {
-        // Evaluate subject and object relations
-        // <--- :P
-        //
+        // Iterate over the content of the map so object and subject are the same type ;)
+        for (const auto& object : worlds()[world].scene().nodes())
+        {
+          if(object.type == MESH)
+          {
+            // Evaluate subject and object relations
+            // <--- :P
+            //
+          }
+        }
       }
     }
   }
