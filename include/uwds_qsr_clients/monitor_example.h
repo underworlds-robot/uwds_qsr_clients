@@ -34,22 +34,6 @@ namespace uwds_qsr_clients
      * This method is called when there is a change in a world.
      *
      * @param world The world that have been updated
-     * @param nodes_id_updated The node IDs that have been updated
-     * @param situations_id_updated The situation IDs that have been updated
-     */
-    virtual void onChanges(const std::string& world,
-                           const std_msgs::Header header,
-                           const std::vector<std::string> nodes_id_updated,
-                           const std::vector<std::string> nodes_id_deleted,
-                           const std::vector<std::string> situations_id_updated,
-                           const std::vector<std::string> situations_id_deleted,
-                           const std::vector<std::string> meshes_id_updated,
-                           const std::vector<std::string> meshes_id_deleted);
-
-    /** @brief
-     * This method is called when there is a change in a world.
-     *
-     * @param world The world that have been updated
      * @param header The header
      * @param invalidations The invalidations received
      */
