@@ -9,6 +9,12 @@ namespace uwds_qsr_clients
     // Not after due to default configuration that happend in the init ;)
   }
 
+  double[2] MonitorExample::boundingBoxFootprint(object)
+  {
+    double[2] footprint = { , };
+    return footprint;
+  }
+
   void MonitorExample::onChanges(const std::string& world,
                          const std_msgs::Header& header,
                          const Invalidations& invalidations)
